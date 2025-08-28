@@ -2,8 +2,6 @@
 .tw-card-follow{
     display: flex;
     align-items: center;
-    border: #ddd 1px solid;
-    border-radius: 12px;
     width: 350px;
     gap: 1rem;
     justify-content: space-between;

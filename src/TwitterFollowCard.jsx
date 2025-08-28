@@ -1,15 +1,15 @@
- export function TwitterFollowCard({userName, name, isFollowing}) {
+ export function TwitterFollowCard({formatUserName, userName, name, }) {
     return (
+        <>
  <article className="tw-card-follow">
             <header className="tw-card-header">
-                <img className="tw-card-image" src={`https://img.freepik.com/free-psd/
-                3d-illustration-person-with-sunglasses_23-2149436188.jpg?semt=ais_hybrid&w=740&q=80/${userName}`}
+                <img className="tw-card-image" src= {`https://unavatar.io/${userName}`}
                 alt="Avatar Random" />
                 <div className="tw-card-info">
                     <strong className="tw-card-name">
                         {name}
                     </strong>
-                    <span className="tw-card-userName">@{userName}</span>
+                    <span className="tw-card-userName">{formatUserName(userName)}</span>
     
                 </div>
             </header>
@@ -18,5 +18,7 @@
                             Seguir
                         </button>
                     </aside>
-        </article>)
-        }
+        </article>
+        </>
+
+    )}
