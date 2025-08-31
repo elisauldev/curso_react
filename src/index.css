@@ -8,3 +8,8 @@ body{
     place-content: center;
     min-height: 100vh;
 }
+.App{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
